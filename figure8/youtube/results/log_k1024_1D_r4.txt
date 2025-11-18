@@ -1,0 +1,123 @@
+Application: IMM (Only for LT), Number of influencers: 1024, epsilon = 0.130000, output file: inf_k1024_1D_r4.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/com-youtube.ungraph-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 1134890
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 5975248
+Graph Info: AVG-degree: 5
+Graph Info: Max-degree: 28754
+STEP 1: Sampling
+Delta/PE: 1345
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.116 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    3.875 seconds
+Fraction covered: 0.035452
+Delta/PE: 1344
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.056 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    5.206 seconds
+Fraction covered: 0.034909
+Delta/PE: 2689
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.095 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    9.766 seconds
+Fraction covered: 0.034655
+Delta/PE: 5377
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.110 seconds
+[ESTIMATE]Time taken to select seeds in sampling:   18.779 seconds
+Fraction covered: 0.034448
+Delta/PE: 10754
+[parmi2:428474:0:428474] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x1e2776410)
+[parmi2:428485:0:428485] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x1ed776410)
+==== backtrace (tid: 428485) ====
+ 0  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(ucs_handle_error+0x294) [0x7ffff54b8064]
+ 1  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(+0x3623b) [0x7ffff54b823b]
+ 2  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(+0x3650e) [0x7ffff54b850e]
+ 3  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x416798]
+ 4  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x416d44]
+ 5  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x412f6e]
+ 6  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x413062]
+ 7  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x4e5c) [0x7ffff7faee5c]
+ 8  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x585c) [0x7ffff7faf85c]
+ 9  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21) [0x7ffff7fb8301]
+=================================
+[parmi2:428485] *** Process received signal ***
+[parmi2:428485] Signal: Segmentation fault (11)
+[parmi2:428485] Signal code:  (-6)
+[parmi2:428485] Failing at address: 0x3eb000689c5
+[parmi2:428485] [ 0] /lib64/libc.so.6(+0x3ebf0)[0x7ffff743ebf0]
+[parmi2:428485] [ 1] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x416798]
+[parmi2:428485] [ 2] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x416d44]
+[parmi2:428485] [ 3] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x412f6e]
+[parmi2:428485] [ 4] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x413062]
+[parmi2:428485] [ 5] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x4e5c)[0x7ffff7faee5c]
+[parmi2:428485] [ 6] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x585c)[0x7ffff7faf85c]
+[parmi2:428485] [ 7] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21)[0x7ffff7fb8301]
+[parmi2:428485] *** End of error message ***
+==== backtrace (tid: 428474) ====
+ 0  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(ucs_handle_error+0x294) [0x7ffff52b8064]
+ 1  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(+0x3623b) [0x7ffff52b823b]
+ 2  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(+0x3650e) [0x7ffff52b850e]
+ 3  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x416798]
+ 4  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x416d44]
+ 5  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x412f6e]
+ 6  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x413062]
+ 7  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x4e5c) [0x7ffff7faee5c]
+ 8  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x585c) [0x7ffff7faf85c]
+ 9  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21) [0x7ffff7fb8301]
+=================================
+[parmi2:428474] *** Process received signal ***
+[parmi2:428474] Signal: Segmentation fault (11)
+[parmi2:428474] Signal code:  (-6)
+[parmi2:428474] Failing at address: 0x3eb000689ba
+[parmi2:428474] [ 0] /lib64/libc.so.6(+0x3ebf0)[0x7ffff743ebf0]
+[parmi2:428474] [ 1] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x416798]
+[parmi2:428474] [ 2] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x416d44]
+[parmi2:428474] [ 3] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x412f6e]
+[parmi2:428474] [ 4] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x413062]
+[parmi2:428474] [ 5] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x4e5c)[0x7ffff7faee5c]
+[parmi2:428474] [ 6] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x585c)[0x7ffff7faf85c]
+[parmi2:428474] [ 7] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21)[0x7ffff7fb8301]
+[parmi2:428474] *** End of error message ***
+[parmi3:342509:0:342509] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x10f200000)
+==== backtrace (tid: 342509) ====
+ 0  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(ucs_handle_error+0x294) [0x7ffff52b8064]
+ 1  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(+0x3623b) [0x7ffff52b823b]
+ 2  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(+0x3650e) [0x7ffff52b850e]
+ 3  /lib64/libc.so.6(+0x190b80) [0x7ffff7590b80]
+ 4  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x416d5a]
+ 5  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x412f6e]
+ 6  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x413062]
+ 7  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x4e5c) [0x7ffff7faee5c]
+ 8  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x585c) [0x7ffff7faf85c]
+ 9  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21) [0x7ffff7fb8301]
+=================================
+[parmi3:342509] *** Process received signal ***
+[parmi3:342509] Signal: Segmentation fault (11)
+[parmi3:342509] Signal code:  (-6)
+[parmi3:342509] Failing at address: 0x3eb000539ed
+[parmi3:342509] [ 0] /lib64/libc.so.6(+0x3ebf0)[0x7ffff743ebf0]
+[parmi3:342509] [ 1] /lib64/libc.so.6(+0x190b80)[0x7ffff7590b80]
+[parmi3:342509] [ 2] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x416d5a]
+[parmi3:342509] [ 3] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x412f6e]
+[parmi3:342509] [ 4] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x413062]
+[parmi3:342509] [ 5] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x4e5c)[0x7ffff7faee5c]
+[parmi3:342509] [ 6] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x585c)[0x7ffff7faf85c]
+[parmi3:342509] [ 7] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21)[0x7ffff7fb8301]
+[parmi3:342509] *** End of error message ***
+srun: error: parmi2: tasks 483,494: Segmentation fault (core dumped)
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi2 [2]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1018.46:483]
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1018.46 ON parmi CANCELLED AT 2025-11-17T21:12:27 ***
+srun: error: parmi3: task 717: Segmentation fault (core dumped)
+srun: error: parmi: tasks 0-189,191: Killed
+srun: error: parmi2: tasks 384-482,484-493,495-557,559-575: Killed
+srun: error: parmi1: tasks 192-382: Killed
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi3 [3]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1018.46:717]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi [0]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1018.46:3]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi2 [2]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1018.46:395]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi1 [1]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1018.46:200]
+srun: error: parmi3: tasks 576-716,718-765,767: Killed
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi3 [3]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1018.46:603]
+srun: error: parmi2: task 558: Killed
+srun: error: parmi1: task 383: Killed
+srun: error: parmi: task 190: Killed
+srun: error: parmi3: task 766: Killed

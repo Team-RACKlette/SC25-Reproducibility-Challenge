@@ -1,0 +1,48 @@
+Application: IMM (Only for LT), Number of influencers: 128, epsilon = 0.130000, output file: inf_k128_1D_r1.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/com-dblp.ungraph-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 317080
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 2099732
+Graph Info: AVG-degree: 6
+Graph Info: Max-degree: 343
+STEP 1: Sampling
+Delta/PE: 188
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.143 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.299 seconds
+Fraction covered: 0.009648
+Delta/PE: 187
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.059 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.435 seconds
+Fraction covered: 0.008385
+Delta/PE: 374
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.074 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.419 seconds
+Fraction covered: 0.007555
+Delta/PE: 749
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.051 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.372 seconds
+Fraction covered: 0.007060
+Delta/PE: 1497
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.080 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.387 seconds
+Fraction covered: 0.006817
+Delta/PE: 2995
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.068 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.660 seconds
+Fraction covered: 0.006765
+Delta/PE: 5990
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.157 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.871 seconds
+Fraction covered: 0.006702
+Delta/PE: 11979
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.102 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    1.915 seconds
+Fraction covered: 0.006697
+
+ThetaFinal/PE: -669
+final,STEP 2: Generate RR final
+Total Time:    6.094 seconds
+Total Time(generateRR):    0.734 seconds
+Total Time(selectseeds):    5.359 seconds

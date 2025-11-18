@@ -1,0 +1,75 @@
+Application: IMM (Only for LT), Number of influencers: 100, epsilon = 0.130000, output file: inf_4n_768c_2D_r4.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/soc-Epinions1-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 75879
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 1017674
+Graph Info: AVG-degree: 13
+Graph Info: Max-degree: 3079
+STEP 1: Sampling
+Delta/PE: 128
+PE 601: convey_imp_panic> convey_checked_push: PE number is out of range
+PE 755: convey_imp_panic> convey_checked_push: PE number is out of range
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector::_M_range_check: __n (which is 6431266133) >= this->size() (which is 866)
+[parmi3:301790] *** Process received signal ***
+[parmi3:301790] Signal: Aborted (6)
+[parmi3:301790] Signal code:  (-6)
+[parmi3:301790] [ 0] /lib64/libc.so.6(+0x3ebf0)[0x7ffff743ebf0]
+[parmi3:301790] [ 1] /lib64/libc.so.6(+0x8bedc)[0x7ffff748bedc]
+[parmi3:301790] [ 2] /lib64/libc.so.6(raise+0x16)[0x7ffff743eb46]
+[parmi3:301790] [ 3] /lib64/libc.so.6(abort+0xd3)[0x7ffff7428833]
+[parmi3:301790] [ 4] /cm/local/apps/gcc/14.2.0/lib64/libstdc++.so.6(+0xaddfd)[0x7ffff78addfd]
+[parmi3:301790] [ 5] /cm/local/apps/gcc/14.2.0/lib64/libstdc++.so.6(+0xbf3ca)[0x7ffff78bf3ca]
+[parmi3:301790] [ 6] /cm/local/apps/gcc/14.2.0/lib64/libstdc++.so.6(_ZSt10unexpectedv+0x0)[0x7ffff78ad9a9]
+[parmi3:301790] [ 7] /cm/local/apps/gcc/14.2.0/lib64/libstdc++.so.6(+0xbf648)[0x7ffff78bf648]
+[parmi3:301790] [ 8] /cm/local/apps/gcc/14.2.0/lib64/libstdc++.so.6(_ZSt24__throw_out_of_range_fmtPKcz+0x101)[0x7ffff78b0776]
+[parmi3:301790] [ 9] /scratch/ipopa/repro/imm_hclib/src/lt_2D/production_2D[0x41014d]
+[parmi3:301790] [10] /scratch/ipopa/repro/imm_hclib/src/lt_2D/production_2D[0x40b045]
+[parmi3:301790] [11] /scratch/ipopa/repro/imm_hclib/src/lt_2D/production_2D[0x40d3cc]
+[parmi3:301790] [12] /scratch/ipopa/repro/imm_hclib/src/lt_2D/production_2D[0x40e862]
+[parmi3:301790] [13] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(help_finish+0x30f)[0x7ffff7fb020f]
+[parmi3:301790] [14] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(hclib_end_finish+0x32)[0x7ffff7fb0752]
+[parmi3:301790] [15] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x6850)[0x7ffff7fb0850]
+[parmi3:301790] [16] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21)[0x7ffff7fb8301]
+[parmi3:301790] *** End of error message ***
+terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector::_M_range_check: __n (which is 366503875925) >= this->size() (which is 866)
+[parmi3:301944] *** Process received signal ***
+[parmi3:301944] Signal: Aborted (6)
+[parmi3:301944] Signal code:  (-6)
+[parmi3:301944] [ 0] /lib64/libc.so.6(+0x3ebf0)[0x7ffff743ebf0]
+[parmi3:301944] [ 1] /lib64/libc.so.6(+0x8bedc)[0x7ffff748bedc]
+[parmi3:301944] [ 2] /lib64/libc.so.6(raise+0x16)[0x7ffff743eb46]
+[parmi3:301944] [ 3] /lib64/libc.so.6(abort+0xd3)[0x7ffff7428833]
+[parmi3:301944] [ 4] /cm/local/apps/gcc/14.2.0/lib64/libstdc++.so.6(+0xaddfd)[0x7ffff78addfd]
+[parmi3:301944] [ 5] /cm/local/apps/gcc/14.2.0/lib64/libstdc++.so.6(+0xbf3ca)[0x7ffff78bf3ca]
+[parmi3:301944] [ 6] /cm/local/apps/gcc/14.2.0/lib64/libstdc++.so.6(_ZSt10unexpectedv+0x0)[0x7ffff78ad9a9]
+[parmi3:301944] [ 7] /cm/local/apps/gcc/14.2.0/lib64/libstdc++.so.6(+0xbf648)[0x7ffff78bf648]
+[parmi3:301944] [ 8] /cm/local/apps/gcc/14.2.0/lib64/libstdc++.so.6(_ZSt24__throw_out_of_range_fmtPKcz+0x101)[0x7ffff78b0776]
+[parmi3:301944] [ 9] /scratch/ipopa/repro/imm_hclib/src/lt_2D/production_2D[0x41014d]
+[parmi3:301944] [10] /scratch/ipopa/repro/imm_hclib/src/lt_2D/production_2D[0x40b045]
+[parmi3:301944] [11] /scratch/ipopa/repro/imm_hclib/src/lt_2D/production_2D[0x40d3cc]
+[parmi3:301944] [12] /scratch/ipopa/repro/imm_hclib/src/lt_2D/production_2D[0x40e862]
+[parmi3:301944] [13] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(help_finish+0x30f)[0x7ffff7fb020f]
+[parmi3:301944] [14] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(hclib_end_finish+0x32)[0x7ffff7fb0752]
+[parmi3:301944] [15] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x6850)[0x7ffff7fb0850]
+[parmi3:301944] [16] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21)[0x7ffff7fb8301]
+[parmi3:301944] *** End of error message ***
+srun: error: parmi3: tasks 601,755: Aborted (core dumped)
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi3 [3]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1017.67:601]
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1017.67 ON parmi CANCELLED AT 2025-11-17T20:40:35 ***
+srun: error: parmi: tasks 0-189,191: Killed
+srun: error: parmi3: tasks 576-600,602-754,756-765,767: Killed
+srun: error: parmi1: tasks 192-381,383: Killed
+srun: error: parmi2: tasks 384-574: Killed
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi [0]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1017.67:9]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi3 [3]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1017.67:589]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi1 [1]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1017.67:205]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi2 [2]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1017.67:399]
+srun: error: parmi3: task 766: Killed
+srun: error: parmi1: task 382: Killed
+srun: error: parmi2: task 575: Killed
+srun: error: parmi: task 190: Killed

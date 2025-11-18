@@ -1,0 +1,47 @@
+Application: IMM (Only for LT), Number of influencers: 100, epsilon = 0.500000, output file: inf_k100_1D_e0.5_r1.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/com-youtube.ungraph-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 1134890
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 5975249
+Graph Info: AVG-degree: 5
+Graph Info: Max-degree: 28754
+STEP 1: Sampling
+Delta/PE: 14
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.067 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.218 seconds
+Fraction covered: 0.024368
+Delta/PE: 14
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.102 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.142 seconds
+Fraction covered: 0.019345
+Delta/PE: 27
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.042 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.087 seconds
+Fraction covered: 0.016548
+Delta/PE: 54
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.073 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.134 seconds
+Fraction covered: 0.015338
+Delta/PE: 108
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.051 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.213 seconds
+Fraction covered: 0.015559
+Delta/PE: 217
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.058 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.283 seconds
+Fraction covered: 0.015520
+Delta/PE: 433
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.040 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.244 seconds
+Fraction covered: 0.015481
+
+ThetaFinal/PE: 49
+final,STEP 2: Generate RR final
+Time taken to select generate RRR sets:    0.042 seconds
+final,STEP 3: Select Seeds
+Time taken to select seeds:    0.229 seconds
+Total Time:    2.025 seconds
+Total Time(generateRR):    0.475 seconds
+Total Time(selectseeds):    1.549 seconds

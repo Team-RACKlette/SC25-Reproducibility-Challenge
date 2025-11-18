@@ -1,0 +1,56 @@
+Application: IMM (Only for LT), Number of influencers: 100, epsilon = 0.130000, output file: inf_1n_192c_2D_r2.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/com-youtube.ungraph-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 1134890
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 5975248
+Graph Info: AVG-degree: 5
+Graph Info: Max-degree: 28754
+STEP 1: Sampling
+Delta/PE: 688
+[ESTIMATE]Time taken to generate RR sets in sampling:    0.032 seconds
+[Time until now] in matrixGen:    0.007 seconds
+[Time until now] in k loops:    0.004 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.011 seconds
+Fraction covered: 0.015625
+Delta/PE: 688
+[ESTIMATE]Time taken to generate RR sets in sampling:    0.034 seconds
+[Time until now] in matrixGen:    0.015 seconds
+[Time until now] in k loops:    0.007 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.011 seconds
+Fraction covered: 0.015546
+Delta/PE: 1375
+[ESTIMATE]Time taken to generate RR sets in sampling:    0.033 seconds
+[Time until now] in matrixGen:    0.022 seconds
+[Time until now] in k loops:    0.010 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.011 seconds
+Fraction covered: 0.015210
+Delta/PE: 2751
+[ESTIMATE]Time taken to generate RR sets in sampling:    0.056 seconds
+[Time until now] in matrixGen:    0.032 seconds
+[Time until now] in k loops:    0.014 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.013 seconds
+Fraction covered: 0.015052
+Delta/PE: 5502
+[ESTIMATE]Time taken to generate RR sets in sampling:    0.061 seconds
+[Time until now] in matrixGen:    0.046 seconds
+[Time until now] in k loops:    0.017 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.018 seconds
+Fraction covered: 0.014992
+Delta/PE: 11003
+[ESTIMATE]Time taken to generate RR sets in sampling:    0.079 seconds
+[Time until now] in matrixGen:    0.074 seconds
+[Time until now] in k loops:    0.021 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.033 seconds
+Fraction covered: 0.015083
+Delta/PE: 22007
+[ESTIMATE]Time taken to generate RR sets in sampling:    0.111 seconds
+[Time until now] in matrixGen:    0.137 seconds
+[Time until now] in k loops:    0.025 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.069 seconds
+Fraction covered: 0.015037
+#RRsets total/pe: 44014
+Total Time:    0.578 seconds
+Total Time(generateRR):    0.408 seconds
+Total Time(selectseeds):    0.165 seconds

@@ -1,0 +1,52 @@
+Application: IMM (Only for LT), Number of influencers: 64, epsilon = 0.130000, output file: inf_k64_1D_r1.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/com-dblp.ungraph-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 317080
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 2099732
+Graph Info: AVG-degree: 6
+Graph Info: Max-degree: 343
+STEP 1: Sampling
+Delta/PE: 103
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.127 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.152 seconds
+Fraction covered: 0.006258
+Delta/PE: 102
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.097 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.094 seconds
+Fraction covered: 0.005037
+Delta/PE: 204
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.073 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.342 seconds
+Fraction covered: 0.004444
+Delta/PE: 409
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.067 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.218 seconds
+Fraction covered: 0.004142
+Delta/PE: 817
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.076 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.187 seconds
+Fraction covered: 0.003991
+Delta/PE: 1635
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.065 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.247 seconds
+Fraction covered: 0.003896
+Delta/PE: 3270
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.088 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.337 seconds
+Fraction covered: 0.003859
+Delta/PE: 6539
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.088 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.499 seconds
+Fraction covered: 0.003808
+Delta/PE: 13078
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.307 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.974 seconds
+Fraction covered: 0.003782
+
+ThetaFinal/PE: -2369
+final,STEP 2: Generate RR final
+Total Time:    4.040 seconds
+Total Time(generateRR):    0.988 seconds
+Total Time(selectseeds):    3.051 seconds

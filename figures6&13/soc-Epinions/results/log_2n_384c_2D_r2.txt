@@ -1,0 +1,41 @@
+Application: IMM (Only for LT), Number of influencers: 100, epsilon = 0.130000, output file: inf_2n_384c_2D_r2.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/soc-Epinions1-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 75879
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 1017674
+Graph Info: AVG-degree: 13
+Graph Info: Max-degree: 3079
+STEP 1: Sampling
+Delta/PE: 255
+[ESTIMATE]Time taken to generate RR sets in sampling:    0.113 seconds
+[Time until now] in matrixGen:    0.019 seconds
+[Time until now] in k loops:    0.005 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.024 seconds
+Fraction covered: 0.178309
+Delta/PE: 254
+[ESTIMATE]Time taken to generate RR sets in sampling:    0.106 seconds
+[Time until now] in matrixGen:    0.039 seconds
+[Time until now] in k loops:    0.010 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.025 seconds
+Fraction covered: 0.175472
+Delta/PE: 509
+[ESTIMATE]Time taken to generate RR sets in sampling:    0.181 seconds
+[Time until now] in matrixGen:    0.082 seconds
+[Time until now] in k loops:    0.018 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.051 seconds
+Fraction covered: 0.176242
+
+ThetaFinal/PE: 214
+final,STEP 2: Generate RR final
+Final, Time taken to generate RR sets:    0.168 seconds
+final, STEP 3: Select Seeds
+[Time until now] in matrixGen:    0.102 seconds
+[Time until now] in k loops:    0.023 seconds
+Final, Time taken to select seeds:    0.025 seconds
+Fraction covered: 0.175633
+#RRsets total/pe: 1232
+Total Time:    0.696 seconds
+Total Time(generateRR):    0.568 seconds
+Total Time(selectseeds):    0.125 seconds

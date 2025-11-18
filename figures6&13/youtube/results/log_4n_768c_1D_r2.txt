@@ -1,0 +1,57 @@
+Application: IMM (Only for LT), Number of influencers: 100, epsilon = 0.130000, output file: inf_4n_768c_1D_r2.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/com-youtube.ungraph-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 1134890
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 5975248
+Graph Info: AVG-degree: 5
+Graph Info: Max-degree: 28754
+STEP 1: Sampling
+Delta/PE: 172
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.116 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.387 seconds
+Fraction covered: 0.016041
+Delta/PE: 172
+[parmi2:333676:0:333676] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x120771b10)
+==== backtrace (tid: 333676) ====
+ 0  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(ucs_handle_error+0x294) [0x7ffff52b8064]
+ 1  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(+0x3623b) [0x7ffff52b823b]
+ 2  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(+0x3650e) [0x7ffff52b850e]
+ 3  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x416798]
+ 4  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x416d44]
+ 5  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x412f6e]
+ 6  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x413062]
+ 7  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x4e5c) [0x7ffff7faee5c]
+ 8  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x585c) [0x7ffff7faf85c]
+ 9  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21) [0x7ffff7fb8301]
+=================================
+[parmi2:333676] *** Process received signal ***
+[parmi2:333676] Signal: Segmentation fault (11)
+[parmi2:333676] Signal code:  (-6)
+[parmi2:333676] Failing at address: 0x3eb0005176c
+[parmi2:333676] [ 0] /lib64/libc.so.6(+0x3ebf0)[0x7ffff743ebf0]
+[parmi2:333676] [ 1] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x416798]
+[parmi2:333676] [ 2] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x416d44]
+[parmi2:333676] [ 3] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x412f6e]
+[parmi2:333676] [ 4] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x413062]
+[parmi2:333676] [ 5] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x4e5c)[0x7ffff7faee5c]
+[parmi2:333676] [ 6] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x585c)[0x7ffff7faf85c]
+[parmi2:333676] [ 7] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21)[0x7ffff7fb8301]
+[parmi2:333676] *** End of error message ***
+srun: error: parmi2: task 493: Segmentation fault (core dumped)
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi2 [2]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1015.62:493]
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1015.62 ON parmi CANCELLED AT 2025-11-17T19:56:54 ***
+srun: error: parmi: tasks 0-190: Killed
+srun: error: parmi2: tasks 384-492,494-572,574-575: Killed
+srun: error: parmi3: tasks 576-761,763-767: Killed
+srun: error: parmi1: tasks 192-361,363-383: Killed
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi [0]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1015.62:11]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi2 [2]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1015.62:391]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi1 [1]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1015.62:204]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi3 [3]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1015.62:585]
+srun: error: parmi3: task 762: Killed
+srun: error: parmi1: task 362: Killed
+srun: error: parmi2: task 573: Killed
+srun: error: parmi: task 191: Killed

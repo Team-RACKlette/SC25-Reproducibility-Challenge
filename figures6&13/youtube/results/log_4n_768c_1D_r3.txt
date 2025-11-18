@@ -1,0 +1,44 @@
+Application: IMM (Only for LT), Number of influencers: 100, epsilon = 0.130000, output file: inf_4n_768c_1D_r3.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/com-youtube.ungraph-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 1134890
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 5975248
+Graph Info: AVG-degree: 5
+Graph Info: Max-degree: 28754
+STEP 1: Sampling
+Delta/PE: 172
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.083 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.419 seconds
+Fraction covered: 0.015890
+Delta/PE: 172
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.065 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.318 seconds
+Fraction covered: 0.015818
+Delta/PE: 344
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.058 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.295 seconds
+Fraction covered: 0.015606
+Delta/PE: 688
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.056 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.334 seconds
+Fraction covered: 0.015564
+Delta/PE: 1375
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.058 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.508 seconds
+Fraction covered: 0.015559
+Delta/PE: 2751
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.065 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    1.175 seconds
+Fraction covered: 0.015526
+Delta/PE: 5502
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.088 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    2.189 seconds
+Fraction covered: 0.015517
+
+ThetaFinal/PE: -1637
+final,STEP 2: Generate RR final
+Total Time:    5.711 seconds
+Total Time(generateRR):    0.474 seconds
+Total Time(selectseeds):    5.237 seconds

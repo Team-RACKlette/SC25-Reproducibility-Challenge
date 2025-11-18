@@ -1,0 +1,47 @@
+Application: IMM (Only for LT), Number of influencers: 256, epsilon = 0.130000, output file: inf_k256_1D_r5.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/com-dblp.ungraph-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 317080
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 2099732
+Graph Info: AVG-degree: 6
+Graph Info: Max-degree: 343
+STEP 1: Sampling
+Delta/PE: 343
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.136 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.620 seconds
+Fraction covered: 0.015431
+Delta/PE: 343
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.069 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.816 seconds
+Fraction covered: 0.013791
+Delta/PE: 685
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.066 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.625 seconds
+Fraction covered: 0.012846
+Delta/PE: 1371
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.064 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.970 seconds
+Fraction covered: 0.012510
+Delta/PE: 2741
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.076 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    1.098 seconds
+Fraction covered: 0.012231
+Delta/PE: 5483
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.096 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    2.037 seconds
+Fraction covered: 0.012082
+Delta/PE: 10965
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.097 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    4.305 seconds
+Fraction covered: 0.012083
+
+ThetaFinal/PE: 733
+final,STEP 2: Generate RR final
+Time taken to select generate RRR sets:    0.086 seconds
+final,STEP 3: Select Seeds
+Time taken to select seeds:    4.238 seconds
+Total Time:   15.402 seconds
+Total Time(generateRR):    0.691 seconds
+Total Time(selectseeds):   14.710 seconds

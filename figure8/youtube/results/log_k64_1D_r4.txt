@@ -1,0 +1,45 @@
+Application: IMM (Only for LT), Number of influencers: 64, epsilon = 0.130000, output file: inf_k64_1D_r4.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/com-youtube.ungraph-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 1134890
+Reading the graph file
+[parmi2:395529:0:395529] Caught signal 11 (Segmentation fault: address not mapped to object at address 0xd4800017ae388)
+==== backtrace (tid: 395529) ====
+ 0  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(ucs_handle_error+0x294) [0x7ffff54b8064]
+ 1  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(+0x3623b) [0x7ffff54b823b]
+ 2  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(+0x3650e) [0x7ffff54b850e]
+ 3  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x40d781]
+ 4  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x413245]
+ 5  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x413492]
+ 6  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x4e5c) [0x7ffff7faee5c]
+ 7  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x5a11) [0x7ffff7fafa11]
+ 8  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21) [0x7ffff7fb8301]
+=================================
+[parmi2:395529] *** Process received signal ***
+[parmi2:395529] Signal: Segmentation fault (11)
+[parmi2:395529] Signal code:  (-6)
+[parmi2:395529] Failing at address: 0x3eb00060909
+[parmi2:395529] [ 0] /lib64/libc.so.6(+0x3ebf0)[0x7ffff743ebf0]
+[parmi2:395529] [ 1] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x40d781]
+[parmi2:395529] [ 2] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x413245]
+[parmi2:395529] [ 3] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x413492]
+[parmi2:395529] [ 4] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x4e5c)[0x7ffff7faee5c]
+[parmi2:395529] [ 5] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x5a11)[0x7ffff7fafa11]
+[parmi2:395529] [ 6] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21)[0x7ffff7fb8301]
+[parmi2:395529] *** End of error message ***
+srun: error: parmi2: task 538: Segmentation fault (core dumped)
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi2 [2]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1018.6:538]
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1018.6 ON parmi CANCELLED AT 2025-11-17T20:49:55 ***
+srun: error: parmi: tasks 0-189,191: Killed
+srun: error: parmi2: tasks 384-537,539-567,569-575: Killed
+srun: error: parmi3: tasks 576-745,747-767: Killed
+srun: error: parmi1: tasks 192-381,383: Killed
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi [0]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1018.6:27]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi2 [2]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1018.6:399]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi3 [3]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1018.6:585]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi1 [1]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1018.6:199]
+srun: error: parmi3: task 746: Killed
+srun: error: parmi2: task 568: Killed
+srun: error: parmi1: task 382: Killed
+srun: error: parmi: task 190: Killed

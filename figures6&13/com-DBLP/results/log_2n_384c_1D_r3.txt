@@ -1,0 +1,51 @@
+Application: IMM (Only for LT), Number of influencers: 100, epsilon = 0.130000, output file: inf_2n_384c_1D_r3.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/com-dblp.ungraph-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 317080
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 2099732
+Graph Info: AVG-degree: 6
+Graph Info: Max-degree: 343
+STEP 1: Sampling
+Delta/PE: 302
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.021 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.154 seconds
+Fraction covered: 0.008235
+Delta/PE: 302
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.031 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.189 seconds
+Fraction covered: 0.007049
+Delta/PE: 603
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.057 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.331 seconds
+Fraction covered: 0.006319
+Delta/PE: 1207
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.031 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.266 seconds
+Fraction covered: 0.006010
+Delta/PE: 2414
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.039 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.320 seconds
+Fraction covered: 0.005873
+Delta/PE: 4827
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.040 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.411 seconds
+Fraction covered: 0.005706
+Delta/PE: 9654
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.060 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.731 seconds
+Fraction covered: 0.005656
+Delta/PE: 19309
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.069 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    1.825 seconds
+Fraction covered: 0.005590
+
+ThetaFinal/PE: 7178
+final,STEP 2: Generate RR final
+Time taken to select generate RRR sets:    0.052 seconds
+final,STEP 3: Select Seeds
+Time taken to select seeds:    2.194 seconds
+Total Time:    6.831 seconds
+Total Time(generateRR):    0.399 seconds
+Total Time(selectseeds):    6.422 seconds

@@ -1,0 +1,79 @@
+Application: IMM (Only for LT), Number of influencers: 512, epsilon = 0.130000, output file: inf_k512_1D_r1.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/com-dblp.ungraph-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 317080
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 2099732
+Graph Info: AVG-degree: 6
+Graph Info: Max-degree: 343
+STEP 1: Sampling
+Delta/PE: 625
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.128 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    1.762 seconds
+Fraction covered: 0.025029
+Delta/PE: 625
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.079 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    1.375 seconds
+Fraction covered: 0.023425
+Delta/PE: 1249
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.078 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    1.636 seconds
+Fraction covered: 0.022557
+Delta/PE: 2498
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.087 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    2.635 seconds
+Fraction covered: 0.022149
+Delta/PE: 4997
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.077 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    5.002 seconds
+Fraction covered: 0.021940
+Delta/PE: 9993
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.115 seconds
+[ESTIMATE]Time taken to select seeds in sampling:   11.111 seconds
+Fraction covered: 0.021811
+
+ThetaFinal/PE: 2188
+final,STEP 2: Generate RR final
+[parmi2:456393:0:456393] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x10f200000)
+==== backtrace (tid: 456393) ====
+ 0  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(ucs_handle_error+0x294) [0x7ffff52b8064]
+ 1  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(+0x3623b) [0x7ffff52b823b]
+ 2  /scratch/ipopa/spack/opt/spack/linux-zen4/ucx-1.19.0-ovw4bvv4wa62d72siufwr5lzne3dc6pd/lib/libucs.so.0(+0x3650e) [0x7ffff52b850e]
+ 3  /lib64/libc.so.6(+0x190b80) [0x7ffff7590b80]
+ 4  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x416d5a]
+ 5  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x412f6e]
+ 6  /scratch/ipopa/repro/imm_hclib/src/lt_1D/production() [0x413062]
+ 7  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x4e5c) [0x7ffff7faee5c]
+ 8  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x585c) [0x7ffff7faf85c]
+ 9  /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21) [0x7ffff7fb8301]
+=================================
+[parmi2:456393] *** Process received signal ***
+[parmi2:456393] Signal: Segmentation fault (11)
+[parmi2:456393] Signal code:  (-6)
+[parmi2:456393] Failing at address: 0x3eb0006f6c9
+[parmi2:456393] [ 0] /lib64/libc.so.6(+0x3ebf0)[0x7ffff743ebf0]
+[parmi2:456393] [ 1] /lib64/libc.so.6(+0x190b80)[0x7ffff7590b80]
+[parmi2:456393] [ 2] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x416d5a]
+[parmi2:456393] [ 3] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x412f6e]
+[parmi2:456393] [ 4] /scratch/ipopa/repro/imm_hclib/src/lt_1D/production[0x413062]
+[parmi2:456393] [ 5] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x4e5c)[0x7ffff7faee5c]
+[parmi2:456393] [ 6] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(+0x585c)[0x7ffff7faf85c]
+[parmi2:456393] [ 7] /scratch/ipopa/repro/imm_hclib/scripts/hclib/hclib-install/lib/libhclib.so.0(make_fcontext+0x21)[0x7ffff7fb8301]
+[parmi2:456393] *** End of error message ***
+srun: error: parmi2: task 460: Segmentation fault (core dumped)
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi2 [2]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1019.30:460]
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1019.30 ON parmi CANCELLED AT 2025-11-17T21:28:14 ***
+srun: error: parmi: tasks 0-189,191: Killed
+srun: error: parmi2: tasks 384-459,461-573,575: Killed
+srun: error: parmi3: tasks 576-765,767: Killed
+srun: error: parmi1: tasks 192-381,383: Killed
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi [0]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1019.30:13]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi3 [3]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1019.30:585]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi2 [2]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1019.30:391]
+slurmstepd: error:  mpi/pmix_v4: _errhandler: parmi1 [1]: pmixp_client_v2.c:211: Error handler invoked: status = -61, source = [slurm.pmix.1019.30:201]
+srun: error: parmi3: task 766: Killed
+srun: error: parmi1: task 382: Killed
+srun: error: parmi2: task 574: Killed
+srun: error: parmi: task 190: Killed

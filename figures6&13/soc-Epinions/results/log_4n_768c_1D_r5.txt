@@ -1,0 +1,27 @@
+Application: IMM (Only for LT), Number of influencers: 100, epsilon = 0.130000, output file: inf_4n_768c_1D_r5.txt, Is un-directed: 1, Is-weighted: 1, scale: -1, degree: -1, file: /scratch/ipopa/repro/imm_hclib/input_files/soc-Epinions1-LT.txt
+
+Cyclic Mapping
+Total Number of Nodes in G: 75879
+Reading the graph file
+Adjusting weights
+Total Number of Edges in G: 1017674
+Graph Info: AVG-degree: 13
+Graph Info: Max-degree: 3079
+STEP 1: Sampling
+Delta/PE: 128
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.444 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.688 seconds
+Fraction covered: 0.320231
+Delta/PE: 127
+[ESTIMATE]Time taken to generate RR sets in sampling:   0.167 seconds
+[ESTIMATE]Time taken to select seeds in sampling:    0.423 seconds
+Fraction covered: 0.320221
+
+ThetaFinal/PE: 84
+final,STEP 2: Generate RR final
+Time taken to select generate RRR sets:    0.214 seconds
+final,STEP 3: Select Seeds
+Time taken to select seeds:    0.491 seconds
+Total Time:    2.427 seconds
+Total Time(generateRR):    0.825 seconds
+Total Time(selectseeds):    1.602 seconds
